@@ -1,15 +1,5 @@
-<div align="center">
-	<br>
-	<br>
-	<img width="240" alt="Ink" src="media/logo.png">
-	<br>
-	<br>
-	<br>
-</div>
-
 > React for CLIs. Build and test your CLI output using components.
 
-[![Build Status](https://github.com/vadimdemedes/ink/workflows/test/badge.svg)](https://github.com/vadimdemedes/ink/actions)
 [![npm](https://img.shields.io/npm/dm/ink?logo=npm)](https://npmjs.com/package/ink)
 
 Ink provides the same component-based UI building experience that React offers in the browser, but for command-line apps.
@@ -20,7 +10,7 @@ Since Ink is a React renderer, it means that all features of React are supported
 Head over to [React](https://reactjs.org) website for documentation on how to use it.
 Only Ink's methods will be documented in this readme.
 
-**Note:** This is documentation for Ink 4. If you're looking for docs on Ink 3, check out [this release](https://github.com/vadimdemedes/ink/tree/v3.2.0).
+**Note:** This is documentation for Ink 4.
 
 ---
 
@@ -28,15 +18,12 @@ Only Ink's methods will be documented in this readme.
 	<p>
 		<p>
 			<sup>
-				<a href="https://opencollective.com/vadimdemedes">My open source work is supported by the community ❤️</a>
+				My open source work is supported by the community
 			</sup>
 		</p>
 		<sup>Special thanks to:</sup>
 		<br>
 		<a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=ink&utm_source=github">
-			<div>
-				<img src="https://vadimdemedes.com/github/workos.svg" width="200" alt="WorkOS">
-			</div>
 			<b>Your app, enterprise-ready.</b>
 			<div>
 				<sub>Start selling to enterprise customers with just a few lines of code.</sub>
@@ -82,8 +69,6 @@ render(<Counter />);
 
 <img src="media/demo.svg" width="600">
 
-You can also check it out live on [repl.it sandbox](https://ink-counter-demo.vadimdemedes.repl.run/).
-Feel free to play around with the code and fork this repl at [https://repl.it/@vadimdemedes/ink-counter-demo](https://repl.it/@vadimdemedes/ink-counter-demo).
 
 ## Who's Using Ink?
 
@@ -155,8 +140,6 @@ Feel free to play around with the code and fork this repl at [https://repl.it/@v
 
 ## Getting Started
 
-Use [create-ink-app](https://github.com/vadimdemedes/create-ink-app) to quickly scaffold a new Ink-based CLI.
-
 ```sh
 npx create-ink-app my-ink-cli
 ```
@@ -207,7 +190,7 @@ Now you can run `cli.js` with Node.js:
 node cli
 ```
 
-If you don't like transpiling files during development, you can use [import-jsx](https://github.com/vadimdemedes/import-jsx) or [@esbuild-kit/esm-loader](https://github.com/esbuild-kit/esm-loader) to `import` a JSX file and transpile it on the fly.
+If you don't like transpiling files during development, you can use [@esbuild-kit/esm-loader](https://github.com/esbuild-kit/esm-loader) to `import` a JSX file and transpile it on the fly.
 
 </p>
 </details>
@@ -1928,8 +1911,6 @@ Patch console methods to ensure console output doesn't mix with Ink output.
 When any of `console.*` methods are called (like `console.log()`), Ink intercepts their output, clears main output, renders output from the console method and then rerenders main output again.
 That way both are visible and are not overlapping each other.
 
-This functionality is powered by [patch-console](https://github.com/vadimdemedes/patch-console), so if you need to disable Ink's interception of output but want to build something custom, you can use it.
-
 ###### debug
 
 Type: `boolean`\
@@ -2029,7 +2010,6 @@ render(<Example />);
 
 ## Testing
 
-Ink components are simple to test with [ink-testing-library](https://github.com/vadimdemedes/ink-testing-library).
 Here's a simple example that checks how component is rendered:
 
 ```jsx
@@ -2043,7 +2023,6 @@ const {lastFrame} = render(<Test />);
 lastFrame() === 'Hello World'; //=> true
 ```
 
-Check out [ink-testing-library](https://github.com/vadimdemedes/ink-testing-library) for more examples and full documentation.
 
 ## Using React Devtools
 
@@ -2115,8 +2094,3 @@ npm run example examples/[example name]
 - [Write to stderr](examples/use-stderr/use-stderr.tsx) - Write to stderr bypassing main Ink output.
 - [Static](examples/static/static.tsx) - Use `<Static>` to render permanent output.
 - [Child process](examples/subprocess-output) - Render output from a child process.
-
-## Maintainers
-
-- [Vadim Demedes](https://github.com/vadimdemedes)
-- [Sindre Sorhus](https://github.com/sindresorhus)
