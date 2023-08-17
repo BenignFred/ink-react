@@ -1,12 +1,3 @@
-<div align="center">
-	<br>
-	<br>
-	<img width="240" alt="Ink" src="media/logo.png">
-	<br>
-	<br>
-	<br>
-</div>
-
 > React for CLIs. Build and test your CLI output using components.
 
 [![Build Status](https://github.com/vadimdemedes/ink/workflows/test/badge.svg)](https://github.com/vadimdemedes/ink/actions)
