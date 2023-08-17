@@ -24,6 +24,9 @@ Only Ink's methods will be documented in this readme.
 		<sup>Special thanks to:</sup>
 		<br>
 		<a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=ink&utm_source=github">
+			<div>
+				<img src="https://vadimdemedes.com/github/workos.svg" width="200" alt="WorkOS">
+			</div>
 			<b>Your app, enterprise-ready.</b>
 			<div>
 				<sub>Start selling to enterprise customers with just a few lines of code.</sub>
