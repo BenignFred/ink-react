@@ -1,3 +1,12 @@
+<div align="center">
+	<br>
+	<br>
+	<img width="240" alt="Ink" src="media/logo.png">
+	<br>
+	<br>
+	<br>
+</div>
+
 > React for CLIs. Build and test your CLI output using components.
 
 [![Build Status](https://github.com/vadimdemedes/ink/workflows/test/badge.svg)](https://github.com/vadimdemedes/ink/actions)
@@ -19,7 +28,7 @@ Only Ink's methods will be documented in this readme.
 	<p>
 		<p>
 			<sup>
-				<a href="https://opencollective.com/vadimdemedes">My open source work is supported by the community</a>
+				<a href="https://opencollective.com/vadimdemedes">My open source work is supported by the community ❤️</a>
 			</sup>
 		</p>
 		<sup>Special thanks to:</sup>
